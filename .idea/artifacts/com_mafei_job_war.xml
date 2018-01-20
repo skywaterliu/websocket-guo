@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="com.mafei.job:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="com.mafei.job-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="com.mafei.job:war exploded" />
+    </root>
+  </artifact>
+</component>

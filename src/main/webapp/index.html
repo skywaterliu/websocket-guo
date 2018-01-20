@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>聊天室</title>
+    <!--第三方依赖-->
+    <script type="text/javascript" src="static/lib/jquery/jquery.js"></script>
+    <script type="text/javascript" src="static/lib/angular/angular.js"></script>
+    <script type="text/javascript" src="static/lib/angular-ui-router/angular-ui-router.js"></script>
+    <script type="text/javascript" src="static/lib/sockjs/sockjs.js"></script>
+    <!--业务代码-->
+    <script type="text/javascript" src="app/state.js"></script>
+    <script type="text/javascript" src="app/index-ctrl.js"></script>
+    <script type="text/javascript" src="app/socket/socket-service.js"></script>
+    <script type="text/javascript" src="app/chat/chat-ctrl.js"></script>
+    <script type="text/javascript" src="app/rooms/rooms-ctrl.js"></script>
+</head>
+<body ng-app="chatroom" ng-controller="initCtrl">
+<div ui-view></div>
+
+</body>
+</html>

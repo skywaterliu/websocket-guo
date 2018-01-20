@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mafei.job.dao.MultiDAO">
+        <!--为了DAO提供sql语句配置-->
+        <select id="getDeviceById" resultType="Device" parameterType="string">
+                SELECT  id as id,device_name as deviceName,msg_id as msgId
+                FROM device
+                WHERE id=#{id}
+        </select>
+
+</mapper>

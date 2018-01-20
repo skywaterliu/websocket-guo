@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="login">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登录页</title>
+    <link rel="stylesheet" href="static/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/login.css">
+</head>
+<body ng-controller="loginController">
+<div class="htmleaf-container">
+    <header class="htmleaf-header" style="text-align: center;margin-top: 120px">
+        <h1>xxx系统</h1>
+    </header>
+    <div class="demo form-bg" style="padding: 20px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6">
+                    <form class="form-horizontal">
+                        <span class="heading">用户登录</span>
+
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="用户名"
+                                   ng-model='logincode'>
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div class="form-group help">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="密　码"
+                                   ng-model='passwd' ng-keypress="enterLogin($event)">
+                            <i class="fa fa-lock"></i>
+                            <a href="#" class="fa fa-question-circle"></a>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control btn btn-default" ng-click="login()">登录</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script type="text/javascript" src="static/lib/jquery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="static/lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="static/lib/angular/angular.min.js"></script>
+<script type="text/javascript" src="app/login.js"></script>
+</html>
